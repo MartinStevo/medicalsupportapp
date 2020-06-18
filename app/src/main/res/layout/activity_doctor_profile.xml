@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".DoctorProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/doc_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/doc_address_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/doc_tel_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/doc_mobil_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="800dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                tools:context=".DoctorProfile" />
+
+            <TextView
+                android:id="@+id/error_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/contactDoctorButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_layout"
+                android:backgroundTint="@color/colorWhite"
+                android:text="@string/sendmsg"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

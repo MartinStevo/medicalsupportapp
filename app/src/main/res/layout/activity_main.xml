@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:windowSoftInputMode="stateAlwaysHidden"
+    tools:context=".MainActivity"
+    android:id="@+id/mainLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/medicbook"
+            android:textColor="@color/colorPrimary"
+            android:textSize="28sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/search_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@id/imageButton"
+                android:autofillHints=""
+                android:background="@drawable/search_layout"
+                android:fontFamily="sans-serif-black"
+                android:hint="@string/search_field_searching"
+                android:inputType="text"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/background_light"
+                android:contentDescription="@android:string/search_go"
+                app:srcCompat="@mipmap/search_but" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/spinner_frame1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_spn_background">
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:dropDownSelector="@color/colorAccent"
+                    android:prompt="@string/hint_doc"
+                    android:spinnerMode="dialog" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/spinner_frame2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_spn_background">
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:dropDownSelector="@color/colorAccent"
+                    android:prompt="@string/hint_region"
+                    android:spinnerMode="dialog" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:scrollbarSize="5dp"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            android:scrollbars="vertical">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/web_view"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</RelativeLayout>

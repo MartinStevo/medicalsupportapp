@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/registracia"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:hint="@string/username">
+        </com.rengwuxian.materialedittext.MaterialEditText>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:hint="@string/email">
+        </com.rengwuxian.materialedittext.MaterialEditText>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:hint="@string/password">
+        </com.rengwuxian.materialedittext.MaterialEditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:id="@+id/registerButton"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/search_layout"
+            android:backgroundTint="@color/colorWhite"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/search_layout"
+        android:backgroundTint="@color/colorWhite"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/back"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/bottom_navigation_menu"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

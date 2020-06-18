@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "927359531980",
+    "firebase_url": "https://medicalsupportapp-eaccc.firebaseio.com",
+    "project_id": "medicalsupportapp-eaccc",
+    "storage_bucket": "medicalsupportapp-eaccc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927359531980:android:7fad33eaf872ac2f777b69",
+        "android_client_info": {
+          "package_name": "com.google.medicalsupportapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927359531980-uq7lk8ktse2ucpicvvprnepm8213lb32.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.google.medicalsupportapp",
+            "certificate_hash": "735228cd03248a6260e67e3981de443d7cc48a12"
+          }
+        },
+        {
+          "client_id": "927359531980-rrh5bh1sjrn78omd5gr2fr1b04bsmqvc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsB00ADJT4QIrYZjM-csLZrm09JwrhuWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927359531980-rrh5bh1sjrn78omd5gr2fr1b04bsmqvc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

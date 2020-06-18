@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="20dp"
+    android:background="#19B5B5B5"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+<!--        android:background="@drawable/search_layout"-->
+<!--        android:backgroundTint="#19B5B5B5"-->
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:text="@string/username"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/last_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>

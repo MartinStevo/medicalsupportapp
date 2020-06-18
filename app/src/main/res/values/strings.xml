@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">medicalsupportapp</string>
+    <string name="medicbook">medicbook</string>
+    <string name="searching">Hľadať...</string>
+    <string name="search_field_searching">Zadajte meno lekára</string>
+    <string name="hint_region">Kraje</string>
+    <string name="hint_doc">Lekárski špecialisti</string>
+    <string-array name="specialists_array">
+        <item>Vyberte odbor</item>
+        <item>Alergológ a imunológ</item>
+        <item>Anestéziológ</item>
+        <item>Angiológ</item>
+        <item>Chirurg</item>
+        <item>Dermatológ</item>
+        <item>Diabetológ</item>
+        <item>Endokrinológ</item>
+        <item>Gastroenterológ</item>
+        <item>Geriater</item>
+        <item>Hematológ</item>
+        <item>Homeopat</item>
+        <item>Infektológ</item>
+        <item>Internista</item>
+        <item>Kardiológ</item>
+        <item>Liečebná rehabilitácia</item>
+        <item>Neurochirurg</item>
+        <item>Neurológ</item>
+        <item>Oftalmológ</item>
+        <item>Onkológ</item>
+        <item>Ortopéd</item>
+        <item>Otorinolaryngológ</item>
+        <item>Plastický chirurg</item>
+        <item>Pneumológ</item>
+        <item>Psychiater</item>
+        <item>Psychológ</item>
+        <item>Reumatológ</item>
+        <item>Sexuológ</item>
+        <item>Traumatológ</item>
+        <item>Urológ</item>
+        <item>Pacientske organizácie</item>
+    </string-array>
+    <string-array name="region">
+        <item>Kraj</item>
+        <item>BA</item>
+        <item>TT</item>
+        <item>TN</item>
+        <item>NR</item>
+        <item>ZA</item>
+        <item>BB</item>
+        <item>PO</item>
+        <item>KE</item>
+    </string-array>
+    <string name="title_activity_map">Map</string>
+    <string name="username">Používateľské meno</string>
+    <string name="password">Heslo</string>
+    <string name="registracia">Registrácia</string>
+    <string name="home">Vyhľadávanie</string>
+    <string name="chat">Správy</string>
+    <string name="profile">Profil</string>
+    <string name="email">Email</string>
+    <string name="submit">Pokračovať</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="login">Prihlásenie</string>
+    <string name="loginButton">Prihlásiť</string>
+    <string name="regButton">Vytvoriť účet</string>
+    <string name="logoutButton">Odhlásiť</string>
+    <string name="back">Späť</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="type_a_message">Správa...</string>
+    <string name="sendmsg">Napísať správu</string>
+    <string name="error">Aplikácia vyžaduje pripojenie na internet</string>
+    <string name="try_again">Skúste znova</string>
+    <string name="map_key" translatable="false">AIzaSyDqYBaV0ChiQysnFqC2eGR2YygNk5nJrK0</string>
+    <string name="seen">Prečítané</string>
+    <string name="forgotpw"><u>Zabudnuté heslo</u></string>
+    <string name="resetpw">Zmena hesla</string>
+    <string name="contact_dev"><u>Kontaktovať developera</u></string>
+    <string name="reset">Reset</string>
+    <string name="reset_message">Po kliknutí na reset obdržíte email pre reset hesla</string>
+</resources>
